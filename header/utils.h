@@ -9,6 +9,7 @@ typedef int LL;
 extern LL CUBE_SIDE_DIM;
 extern std::string GRAPH_FILE;
 extern LL N_THREADS;
+extern LL N_TRIALS;
 // DS
 struct Node {
     LL degree;
