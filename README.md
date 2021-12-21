@@ -1,6 +1,6 @@
 ## Parallel_BFS
 
-###Results:
+### Results:
 <table>
   <tr>
     <th>Side Dimension</th>   <th>Gain (using 4 threads)</th>   <th>Gain (using 12 threads)</th>
