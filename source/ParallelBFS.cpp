@@ -71,13 +71,6 @@ void Parallel_BFS::visit(const Graph* graph) {
 
 bool Parallel_BFS::verify(Graph* graph) {
     for(auto i = 0; i < this->graph_size; i++)
-//        if (graph->nodes[i].distance != get_distance(i)) {
-//            std::cout << "index " << i << " -> ";
-//            std::cout << graph->nodes[i].distance << " -> ";
-//            std::cout << get_distance(i) << " -> ";
-//            std::cout << ( visited[i] ? "visited" : "Not visited") << std::endl;
-//            assert((false));
-//        }
         if (distances[i] != get_distance(i)) {
             std::cout << "index " << i << " -> ";
             std::cout << distances[i]<< " -> ";
