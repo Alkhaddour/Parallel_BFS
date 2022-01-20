@@ -12,7 +12,7 @@ long long test_parallel_bfs(Graph* graph){
     auto duration_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end_timestamp - start_timestamp).count();
     std::cout << "Verifying that all nodes were visited...\n";
 
-    if (p_bfs.verify())
+    if (p_bfs.verify(graph))
         std::cout << "OK! in " << duration_ms <<"ms" <<"\n";
     else
         assert("Failed to visit all nodes");

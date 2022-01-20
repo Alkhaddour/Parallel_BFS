@@ -17,11 +17,13 @@ class Parallel_BFS{
         LL * nf_marked;
         LL * nf_marked_cum;
 
-        bool *visited;
+        bool* visited;
+        int* distances;
 
     public:
         explicit Parallel_BFS(LL graph_size);
-        void visit(const Graph *graph);
-        bool verify();
+        void  visit(const Graph *graph);
+        bool verify(Graph* graph);
+        static int get_distance(LL neighbor_idx);
 };
 #endif //PARALLEL_BFS_OPENMP_PARALLELBFS_H
